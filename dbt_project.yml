@@ -1,0 +1,24 @@
+name: ajar-kw
+version: '1.0'
+profile: ajar_kw  # must match the profile name set in dbt Cloud
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+seed-paths: ["seeds"]
+docs-paths: ["docs"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  ajar-kw:
+    +schema: dbt_aajmal  # your personal dataset in BigQuery
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
