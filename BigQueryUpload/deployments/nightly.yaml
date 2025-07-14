@@ -36,7 +36,7 @@ flow_name: nightly-pg-to-bq
 manifest_path: null
 storage: null
 path: /Users/abdullahajmal/Desktop/prefect-pg-bq-pipeline/BigQueryUpload
-entrypoint: prefect_pg_bigquery.py:nightly_pg_to_bq
+entrypoint: prefect_pg_bigquery:nightly_pg_to_bq
 parameter_openapi_schema:
   title: Parameters
   type: object
