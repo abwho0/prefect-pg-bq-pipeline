@@ -208,11 +208,11 @@ from google.oauth2 import service_account
 from google.cloud.bigquery import SchemaField
 import os
 import pytz
+from dotenv import load_dotenv
 import os
 
-# from dotenv import load_dotenv
-# load_dotenv(dotenv_path="/Users/abdullahajmal/Desktop/prefect-pg-bq-pipeline.env")
-
+# Load .env from the project root (adjust the path as needed)
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
 
 # Now fetch the secrets
 credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
