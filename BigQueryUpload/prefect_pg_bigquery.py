@@ -210,8 +210,8 @@ import os
 import pytz
 import os
 
-from dotenv import load_dotenv
-load_dotenv(dotenv_path="/Users/abdullahajmal/Desktop/prefect-pg-bq-pipeline.env")
+# from dotenv import load_dotenv
+# load_dotenv(dotenv_path="/Users/abdullahajmal/Desktop/prefect-pg-bq-pipeline.env")
 
 
 # Now fetch the secrets
