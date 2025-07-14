@@ -32,7 +32,7 @@ infrastructure:
 ###
 ### DO NOT EDIT BELOW THIS LINE
 ###
-flow_name: nightly-pg-to-bq
+flow_name: nightly_pg_to_bq
 manifest_path: null
 storage: null
 path: /Users/abdullahajmal/Desktop/prefect-pg-bq-pipeline/BigQueryUpload
