@@ -1,0 +1,48 @@
+###
+### A complete description of a Prefect Deployment for flow 'nightly-pg-to-bq'
+###
+name: Nightly Upload
+description: null
+version: null
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+schedules:
+- schedule:
+    cron: 0 12 * * *
+    timezone: null
+    day_or: true
+  active: true
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: nightly-pg-to-bq
+manifest_path: null
+storage: null
+path: /Users/abdullahajmal/Desktop/prefect-pg-bq-pipeline/BigQueryUpload
+entrypoint: prefect_pg_bigquery.py:nightly_pg_to_bq
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2025-07-14T11:11:56.238885+00:00'
+triggers: []
+enforce_parameter_schema: null
